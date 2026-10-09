@@ -1,0 +1,7 @@
+backend/vendor
+backend/node_modules
+backend/mongodb/data
+backend/mongodb/*.log
+backend/.env
+frontend/node_modules
+**/.DS_Store

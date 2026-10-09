@@ -1,0 +1,95 @@
+:root {
+    color-scheme: light;
+    --ink: #241c18;
+    --muted: #6d625b;
+    --paper: #f6f0e8;
+    --card: #fffaf5;
+    --accent: #d4654a;
+    --line: rgba(36, 28, 24, 0.1);
+    font-family: "Avenir Next", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100dvh;
+    color: var(--ink);
+    background:
+        radial-gradient(900px 420px at 10% -10%, #f6d7cc, transparent 60%),
+        radial-gradient(700px 380px at 110% 0%, #d9ebe4, transparent 55%),
+        var(--paper);
+}
+
+.sheet {
+    width: min(440px, calc(100% - 32px));
+    margin: 28px auto 48px;
+}
+
+.brand {
+    margin: 0;
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+h1 {
+    margin: 8px 0 0;
+    font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    font-weight: 560;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+}
+
+.lede {
+    margin: 10px 0 18px;
+    color: var(--muted);
+    line-height: 1.45;
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 28px;
+    background: #efe4da;
+    box-shadow: 0 24px 50px rgba(60, 36, 22, 0.14);
+}
+
+.actions {
+    display: grid;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.primary, button {
+    min-height: 58px;
+    border-radius: 999px;
+    border: 0;
+    font: inherit;
+    font-size: 1.05rem;
+    font-weight: 650;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.primary {
+    display: grid;
+    place-items: center;
+    color: #fffaf7;
+    background: var(--accent);
+}
+
+button {
+    color: var(--ink);
+    background: transparent;
+    border: 1px solid var(--line);
+}
+
+.copied {
+    text-align: center;
+    color: #1f6f62;
+}
